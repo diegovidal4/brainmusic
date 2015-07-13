@@ -1,0 +1,34 @@
+<ion-view view-title="Register" hide-nav-bar="true" ng-init="register_init()">
+<ion-nav-bar>
+ <ion-nav-title>
+      <center>Registro</center>
+    </ion-nav-title>
+  </ion-nav-bar>
+	<ion-content>
+		  <form ng-submit="register()">
+		  	<label class="item item-input">
+			  <input type="text" placeholder="Nombre de usuario" ng-model="registerUser.username">
+		  	</label>
+			<label class="item item-input">
+			  <input type="text" placeholder="Nombre" ng-model="registerUser.name">
+			</label>
+			<label class="item item-input">
+			  <input type="text" placeholder="Apellido" ng-model="registerUser.last_name">
+			</label>
+			<label class="item item-input">
+			  <input type="text" placeholder="E-mail" ng-model="registerUser.email">
+			</label>
+			<label class="item item-input">
+			  <input type="password" placeholder="Contraseña" ng-model="registerUser.password">
+			</label>
+			<label class="item item-input">
+			  <input type="password" placeholder="Confirme contraseña" ng-model="registerUser.confirmPassword">
+			</label>
+            <label class="item item-input">
+                <ion-autocomplete placeholder="Buscar Tags" ng-model="registerUser.tags" item-value-key="id" item-view-value-key="text" items-method="searchCallback(query)" multiple-select="true"/>
+            </label>
+			  <button class="button button-block button-positive" type="submit">Registrarse</button>
+		  </form>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+<ion-view view-title="Login" id="welcome-view" hide-nav-bar="true" ng-init="init()" align-title="left">
+	<ion-content>
+		<!-- <div class="logo-welcome">
+			<img src="img/brain2.svg" alt="" />
+		</div> -->
+		<form ng-submit="login()">
+		<div class="list padding">
+			<div class="brainmusic_header"><p>Brainmusic</p></div>
+				<label class="item item-input item-md-label" placeholder="Username" highlight-color="balanced" type="text">
+					<input type="text" ng-model="user.username" required><span class="input-label">Username</span><div class="highlight highlight-balanced"></div></input>
+				</label>
+				<label class="item item-input item-md-label" placeholder="Username" highlight-color="balanced" type="text">
+					<input type="password" ng-model="user.password" required><span class="input-label">Password</span><div class="highlight highlight-balanced"></div></input>
+				</label>
+			<div class="padding">
+				<button class="button button-block button-balanced waves-effect waves-button waves-light">Iniciar sesion</button>
+				<button ui-sref="register" class="button button-block button-balanced ink">Registrarse</button>
+	        </div>
+		</div>
+</form>
+	</ion-content>
+</ion-view>
